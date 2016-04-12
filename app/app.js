@@ -32,4 +32,3 @@ angular.module('casusMIT3', [
     ]);
 
 }]);
-//adafd

@@ -66,4 +66,3 @@ angular.module('casusMIT3.index', ['ngRoute', 'AdalAngular'])
 
 
     }]);
-;
