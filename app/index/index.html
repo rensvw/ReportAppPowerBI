@@ -13,15 +13,15 @@
             <div class="panel">
                 <div layout="column" layout-align="center center">
                     <md-select placeholder="Assign to user" ng-model="movie.Name" md-on-open="movieNames()" style="min-width: 200px;">
-                        <md-option ng-value="user" ng-repeat="movieName in movieNames">{{movieName.name}}</md-option>
+                        <md-option ng-value="user" ng-repeat="movieName in movieNames">{{movieName.Name}}</md-option>
                     </md-select>
                     <md-select placeholder="Assign to user" ng-model="movie.BoxOffice" md-on-open="movieBoxOffices()" style="min-width: 200px;">
-                        <md-option ng-value="user" ng-repeat="movieBoxOffice in movieBoxOffices">{{movieBoxOffice.boxOffice}}</md-option>
+                        <md-option ng-value="user" ng-repeat="movieBoxOffice in movieBoxOffices">{{movieBoxOffice.BoxOffice}}</md-option>
                     </md-select>
                     <md-select placeholder="Assign to user" ng-model="movie.Rating" md-on-open="movieRatings()" style="min-width: 200px;">
-                        <md-option ng-value="user" ng-repeat="movieRating in movieRatings">{{movieRating.rating}}</md-option>
+                        <md-option ng-value="user" ng-repeat="movieRating in movieRatings">{{movieRating.Rating}}</md-option>
                     </md-select>
-                    <md-button class="md-raised md-primary" ng-click="createMovie(movie)">Create Movie</md-button>
+                    <md-button class="md-raised md-primary" ng-click="alert(movie)">Create Movie</md-button>
 
                 </div>
             </div>
