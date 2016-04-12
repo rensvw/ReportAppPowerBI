@@ -16,7 +16,17 @@ angular.module('casusMIT3.index', ['ngRoute', 'AdalAngular'])
         $scope.reports;
         $scope.selectedReport;
         $scope.movie;
+        $scope.movies;
+        $scope.error;
 
+        $http.get("http://moviewebapi.azurewebsites.net/api/movies").success(function (data) {
+                $scope.movies = data;
+                $scope.loading = false;
+            })
+            .error(function () {
+                $scope.error = "An Error has occured while loading projects!";
+                $scope.loading = false;
+            });
 
 
         $http.get('https://api.powerbi.com/beta/myorg/reports').then(function (response) {
