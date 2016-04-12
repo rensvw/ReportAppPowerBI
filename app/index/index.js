@@ -80,7 +80,7 @@ angular.module('casusMIT3.index', ['ngRoute', 'AdalAngular'])
                 .succes(alert("Movie has been created!!"));
         };
 
-        $scope.alert = function alert(movie){
+        $scope.alert = function(movie){
             return alert(movie);
         };
 
