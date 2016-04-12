@@ -78,7 +78,10 @@ angular.module('casusMIT3.index', ['ngRoute', 'AdalAngular'])
         $scope.createMovie = function createMovie(movie){
             return $http.post('http://moviewebapi.azurewebsites.net/api/movies', movie)
                 .succes(alert("Movie has been created!!"));
-        }
+        };
 
+        $scope.alert = function alert(movie){
+            return alert(movie);
+        };
 
     }]);
