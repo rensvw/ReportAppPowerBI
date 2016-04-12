@@ -1,8 +1,8 @@
 {
-  "name": "angular-seed",
-  "description": "A starter project for AngularJS",
+  "name": "casusMIT3",
+  "description": "A project for the MIT3 Casus",
   "version": "0.0.0",
-  "homepage": "https://github.com/angular/angular-seed",
+  "homepage": "https://casuszuyd.azurewebsites.net/",
   "license": "MIT",
   "private": true,
   "dependencies": {
@@ -10,6 +10,13 @@
     "angular-route": "~1.4.0",
     "angular-loader": "~1.4.0",
     "angular-mocks": "~1.4.0",
-    "html5-boilerplate": "~5.2.0"
+    "html5-boilerplate": "~5.2.0",
+    "angular-ui-bootstrap":"~1.3.0",
+    "bootstrap":"~3.3.6",
+    "bootswatch":"~3.3.6",
+    "adal-angular":"~1.0.9",
+    "angular-material":"~1.1.0"
+
+
   }
 }
