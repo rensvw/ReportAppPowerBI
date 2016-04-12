@@ -36,7 +36,7 @@ angular.module('casusMIT3.index', ['ngRoute', 'AdalAngular'])
             // Use timeout to simulate a 650ms request.
             return $timeout(function() {
                 $scope.movieNames =  $scope.movieNames  || [
-                        { Name: 'Scooby Doo',  },
+                        { Name: 'Scooby Doo'  },
                         { Name: 'Shaggy Rodgers' },
                         { Name: 'Fred Jones' },
                         { Name: 'Daphne Blake' },
@@ -51,7 +51,7 @@ angular.module('casusMIT3.index', ['ngRoute', 'AdalAngular'])
             return $timeout(function() {
 
                 $scope.movieBoxOffices =  $scope.movieBoxOffices  || [
-                        { BoxOffice: 5634,  },
+                        { BoxOffice: 5634 },
                         { BoxOffice: 43565463 },
                         { BoxOffice: 234254 },
                         { BoxOffice: 3456347 },
@@ -66,7 +66,7 @@ angular.module('casusMIT3.index', ['ngRoute', 'AdalAngular'])
             return $timeout(function() {
 
                 $scope.movieRatings =  $scope.movieRatings  || [
-                        { Rating: 1,  },
+                        { Rating: 1 },
                         { Rating: 2 },
                         { Rating: 3 },
                         { Rating: 4 },
