@@ -264,7 +264,7 @@ angular.module('casusMIT3.results', ['ngRoute', 'AdalAngular', 'ngMaterial'])
         request.send(JSON.stringify(body));
 */
 
-      /*  // Update reports when a new workspace is selected
+       // Update reports when a new workspace is selected
         $scope.$watch('selectedWorkspace', function (selectedWorkspace) {
 
             $scope.selectedReport = null
@@ -278,7 +278,7 @@ angular.module('casusMIT3.results', ['ngRoute', 'AdalAngular', 'ngMaterial'])
                 $scope.reportError = error;
             });
 
-        });*/
+        });
 
 
     }]);
