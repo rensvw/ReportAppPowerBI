@@ -32,7 +32,7 @@ angular.module('casusMIT3.index', ['ngRoute', 'AdalAngular'])
         $scope.movieRatings = null;
         $scope.movieRating = null;
 
-        $scope.loadUsers = function() {
+        $scope.movieNames = function() {
             // Use timeout to simulate a 650ms request.
             return $timeout(function() {
                 $scope.movieNames =  $scope.movieNames  || [
@@ -42,6 +42,14 @@ angular.module('casusMIT3.index', ['ngRoute', 'AdalAngular'])
                         { id: 4, name: 'Daphne Blake' },
                         { id: 5, name: 'Velma Dinkley' }
                     ];
+
+            }, 650);
+        };
+
+        $scope.movieBoxOffices = function() {
+            // Use timeout to simulate a 650ms request.
+            return $timeout(function() {
+
                 $scope.movieBoxOffices =  $scope.movieBoxOffices  || [
                         { id: 1, boxOffice: 5634,  },
                         { id: 2, boxOffice: 43565463 },
@@ -49,6 +57,14 @@ angular.module('casusMIT3.index', ['ngRoute', 'AdalAngular'])
                         { id: 4, boxOffice: 3456347 },
                         { id: 5, boxOffice: 354667 }
                     ];
+
+            }, 650);
+        };
+
+        $scope.movieRatings = function() {
+            // Use timeout to simulate a 650ms request.
+            return $timeout(function() {
+
                 $scope.movieRatings =  $scope.movieRatings  || [
                         { id: 1, rating: 1,  },
                         { id: 2, rating: 2 },
