@@ -75,14 +75,20 @@ angular.module('casusMIT3.index', ['ngRoute', 'AdalAngular'])
             }, 650);
         };
 
-        $scope.createMovie = function(){
+
+
+        $scope.createMovie = function () {
+            $scope.loading = true;
             $scope.movie = this.movie;
-            $http.post('http://moviewebapi.azurewebsites.net/api/movies', this.movie)
-                .succes(function (data)
-            {
-                alert("Added Successfully!!");
-                alert(data);
-            })
+            $http.post("http://moviewebapi.azurewebsites.net/api/movies", this.newproject)
+                .success(function (data) {
+                    alert("Added Successfully!!");
+                    $scope.addMode = false;
+                    $scope.loading = false;
+                }).error(function (data) {
+                alert("Something went wrong, Error message: " + JSON.stringify(data));
+                $scope.loading = false;
+            });
         };
 
         $scope.alert = function(){
