@@ -77,7 +77,7 @@ angular.module('casusMIT3.index', ['ngRoute', 'AdalAngular'])
 
         $scope.createMovie = function(){
             $scope.movie = this.movie;
-            return $http.post('http://moviewebapi.azurewebsites.net/api/movies', this.movie)
+            $http.post('http://moviewebapi.azurewebsites.net/api/movies', this.movie)
                 .succes(function (data)
             {
                 alert("Added Successfully!!");
