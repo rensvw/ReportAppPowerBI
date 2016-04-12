@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <p>
+        <h3>Azure AD User:</h3></p>
+
+        <p>{{userInfo.userName}}</p>
+        <p>aud:{{userInfo.profile.aud}}</p>
+        <p>iss:{{userInfo.profile.iss}}</p>
+
+        <p>
+        <h3>Power BI Reports:</h3></p>
+
+        <pre>{{reports | json}}</pre>
+    </div>
+    <div class="col-md-1"></div>
+</div>
