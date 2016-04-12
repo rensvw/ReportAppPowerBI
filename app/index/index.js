@@ -32,7 +32,7 @@ angular.module('casusMIT3.index', ['ngRoute', 'AdalAngular'])
         $scope.movieRatings = null;
         $scope.movieRating = null;
 
-        $scope.movieNames = function() {
+        $scope.movieNamesLoad = function() {
             // Use timeout to simulate a 650ms request.
             return $timeout(function() {
                 $scope.movieNames =  $scope.movieNames  || [
@@ -46,7 +46,7 @@ angular.module('casusMIT3.index', ['ngRoute', 'AdalAngular'])
             }, 650);
         };
 
-        $scope.movieBoxOffices = function() {
+        $scope.movieBoxOfficesLoad = function() {
             // Use timeout to simulate a 650ms request.
             return $timeout(function() {
 
@@ -61,7 +61,7 @@ angular.module('casusMIT3.index', ['ngRoute', 'AdalAngular'])
             }, 650);
         };
 
-        $scope.movieRatings = function() {
+        $scope.movieRatingsLoad = function() {
             // Use timeout to simulate a 650ms request.
             return $timeout(function() {
 
