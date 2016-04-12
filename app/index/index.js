@@ -11,7 +11,7 @@ angular.module('casusMIT3.index', ['ngRoute', 'AdalAngular'])
     }])
 
 
-    .controller('indexCtrl', ['adalAuthenticationService', '$http', '$scope', function (adalService, $http, $scope) {
+    .controller('indexCtrl', ['adalAuthenticationService', '$http', '$scope', '$timeout', function (adalService, $http, $scope,$timeout) {
 
         $scope.reports;
         $scope.selectedReport;
@@ -21,7 +21,20 @@ angular.module('casusMIT3.index', ['ngRoute', 'AdalAngular'])
             $scope.selectedReport = $scope.reports[0].embedUrl;
         });
 
-        $scope.test222 = 0;
+        $scope.user = null;
+        $scope.users = null;
+        $scope.loadUsers = function() {
+            // Use timeout to simulate a 650ms request.
+            return $timeout(function() {
+                $scope.users =  $scope.users  || [
+                        { id: 1, name: 'Scooby Doo' },
+                        { id: 2, name: 'Shaggy Rodgers' },
+                        { id: 3, name: 'Fred Jones' },
+                        { id: 4, name: 'Daphne Blake' },
+                        { id: 5, name: 'Velma Dinkley' }
+                    ];
+            }, 650);
+        };
 
 
     }]);

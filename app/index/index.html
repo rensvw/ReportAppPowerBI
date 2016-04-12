@@ -1,17 +1,37 @@
 <div class="row">
     <div class="col-md-1"></div>
     <div class="col-md-10">
-        <p>
-        <h3>Azure AD User:</h3></p>
 
-        <p>{{userInfo.userName}}</p>
-        <p>aud:{{userInfo.profile.aud}}</p>
-        <p>iss:{{userInfo.profile.iss}}</p>
+<div></div>
 
-        <p>
-        <h3>Power BI Reports:</h3></p>
 
-        <pre>{{reports | json}}</pre>
-    </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+              Create Movie
+            </div>
+
+            <div class="panel">
+                <div layout="column" layout-align="center center">
+                    <md-select placeholder="Assign to user" ng-model="user" md-on-open="loadUsers()" style="min-width: 200px;">
+                        <md-option ng-value="user" ng-repeat="user in users">{{user.name}}</md-option>
+                    </md-select>
+                    <md-select placeholder="Assign to user" ng-model="user" md-on-open="loadUsers()" style="min-width: 200px;">
+                        <md-option ng-value="user" ng-repeat="user in users">{{user.name}}</md-option>
+                    </md-select>
+                    <md-select placeholder="Assign to user" ng-model="user" md-on-open="loadUsers()" style="min-width: 200px;">
+                        <md-option ng-value="user" ng-repeat="user in users">{{user.name}}</md-option>
+                    </md-select>
+                    <md-select placeholder="Assign to user" ng-model="user" md-on-open="loadUsers()" style="min-width: 200px;">
+                        <md-option ng-value="user" ng-repeat="user in users">{{user.name}}</md-option>
+                    </md-select>
+                    <md-button class="md-raised md-primary">Create Movie</md-button>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        </div>
     <div class="col-md-1"></div>
 </div>
