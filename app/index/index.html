@@ -21,7 +21,7 @@
                     <md-select placeholder="Rating" ng-model="movie.Rating" md-on-open="movieRatingsLoad()" style="min-width: 200px;">
                         <md-option ng-value="user" ng-repeat="movieRating in movieRatings">{{movieRating.Rating}}</md-option>
                     </md-select>
-                    <md-button class="md-raised md-primary" ng-click="alert(movie)">Create Movie</md-button>
+                    <md-button class="md-raised md-primary" ng-click="createMovie()">Create Movie</md-button>
 
                 </div>
             </div>
