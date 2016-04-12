@@ -11,7 +11,7 @@ angular.module('casusMIT3.results', ['ngRoute', 'AdalAngular', 'ngMaterial'])
     }])
 
     .controller('resultsCtrl', ['$scope', 'powerBi', 'adalAuthenticationService', '$http', function ($scope, powerBi,adal,$http) {
-        
+
         var iframe = document.getElementById("report");
         iframe.addEventListener("load", function () {
             var token = adal.getCachedToken("https://analysis.windows.net/powerbi/api");
@@ -59,7 +59,6 @@ angular.module('casusMIT3.results', ['ngRoute', 'AdalAngular', 'ngMaterial'])
                 });
         }
 
-
         function listAllDatasets() {
             powerBi.listAllDataSets()
                 .then(function (response) {
@@ -82,7 +81,6 @@ angular.module('casusMIT3.results', ['ngRoute', 'AdalAngular', 'ngMaterial'])
                 });
 
         }
-
 
 
         function listAllGroups() {
@@ -111,6 +109,5 @@ angular.module('casusMIT3.results', ['ngRoute', 'AdalAngular', 'ngMaterial'])
             });
 
         });
-
 
     }]);

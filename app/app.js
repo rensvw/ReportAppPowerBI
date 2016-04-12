@@ -31,6 +31,5 @@ angular.module('casusMIT3', [
         'https://*.powerbi.com/**'
     ]);
 
-
 }]);
 //adafd
