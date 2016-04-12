@@ -36,11 +36,11 @@ angular.module('casusMIT3.index', ['ngRoute', 'AdalAngular'])
             // Use timeout to simulate a 650ms request.
             return $timeout(function() {
                 $scope.movieNames =  $scope.movieNames  || [
-                        { id: 1, Name: 'Scooby Doo',  },
-                        { id: 2, Name: 'Shaggy Rodgers' },
-                        { id: 3, Name: 'Fred Jones' },
-                        { id: 4, Name: 'Daphne Blake' },
-                        { id: 5, Name: 'Velma Dinkley' }
+                        { Name: 'Scooby Doo',  },
+                        { Name: 'Shaggy Rodgers' },
+                        { Name: 'Fred Jones' },
+                        { Name: 'Daphne Blake' },
+                        { Name: 'Velma Dinkley' }
                     ];
 
             }, 650);
@@ -51,11 +51,11 @@ angular.module('casusMIT3.index', ['ngRoute', 'AdalAngular'])
             return $timeout(function() {
 
                 $scope.movieBoxOffices =  $scope.movieBoxOffices  || [
-                        { id: 1, BoxOffice: 5634,  },
-                        { id: 2, BoxOffice: 43565463 },
-                        { id: 3, BoxOffice: 234254 },
-                        { id: 4, BoxOffice: 3456347 },
-                        { id: 5, BoxOffice: 354667 }
+                        { BoxOffice: 5634,  },
+                        { BoxOffice: 43565463 },
+                        { BoxOffice: 234254 },
+                        { BoxOffice: 3456347 },
+                        { BoxOffice: 354667 }
                     ];
 
             }, 650);
@@ -66,11 +66,11 @@ angular.module('casusMIT3.index', ['ngRoute', 'AdalAngular'])
             return $timeout(function() {
 
                 $scope.movieRatings =  $scope.movieRatings  || [
-                        { id: 1, Rating: 1,  },
-                        { id: 2, Rating: 2 },
-                        { id: 3, Rating: 3 },
-                        { id: 4, Rating: 4 },
-                        { id: 5, Rating: 5 }
+                        { Rating: 1,  },
+                        { Rating: 2 },
+                        { Rating: 3 },
+                        { Rating: 4 },
+                        { Rating: 5 }
                     ];
             }, 650);
         };
