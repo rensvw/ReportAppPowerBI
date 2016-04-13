@@ -28,10 +28,7 @@ angular.module('casusMIT3.index', ['ngRoute', 'AdalAngular'])
             });
 
 
-        $http.get('https://api.powerbi.com/beta/myorg/reports').then(function (response) {
-            $scope.reports = response.data.value;
-            $scope.selectedReport = $scope.reports[0].embedUrl;
-        });
+
 
 
         $scope.movieNames = null;

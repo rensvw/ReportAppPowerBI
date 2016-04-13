@@ -20,7 +20,7 @@ angular.module('casusMIT3', [
             endpoints: {
                 'https://api.powerbi.com': "https://analysis.windows.net/powerbi/api",
             },
-            requireADLogin: true,
+
             cacheLocation: 'localStorage'
         },
         $httpProvider
