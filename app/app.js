@@ -11,7 +11,7 @@ angular.module('casusMIT3', [
 ]).config(['$routeProvider', '$httpProvider', 'adalAuthenticationServiceProvider', '$sceDelegateProvider', function ($routeProvider, $httpProvider, adalAuthenticationServiceProvider, $sceDelegateProvider) {
 
     $routeProvider.otherwise({
-        redirectTo: '/index'
+        redirectTo: '/results'
     });
 
     adalAuthenticationServiceProvider.init({
