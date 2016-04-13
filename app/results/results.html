@@ -43,7 +43,8 @@
 
                     <label>
                         <select ng-show="reports" ng-model="selectedWorkspace">
-                            <option ng-repeat="workspace in workspaces" value="{{workspace.id}} ">{{workspace.name}}</option>
+                            <option ng-repeat="workspace in workspaces" value="{{workspace.id}}  ">{{workspace.name}}
+                            </option>
                         </select>
                     </label>
                     <i ng-show="!reports && !reportError" class="fa fa-spinner fa-spin"></i>
@@ -75,7 +76,7 @@
                     Embedded Report
                     <label>
                         <select ng-show="reports" ng-model="selectedReport">
-                            <option ng-repeat="report in reports" value="{{report.embedUrl}} ">{{report.name}}</option>
+                            <option ng-repeat="report in reports" value="{{report.embedUrl}}  ">{{report.name}}</option>
                         </select>
                     </label>
                     <i ng-show="!reports && !reportError" class="fa fa-spinner fa-spin"></i>
