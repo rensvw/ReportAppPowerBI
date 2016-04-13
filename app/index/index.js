@@ -18,7 +18,7 @@ angular.module('casusMIT3.index', ['ngRoute', 'AdalAngular'])
         $scope.movies;
         $scope.error;
 
-        $http.get("http://moviewebapi.azurewebsites.net/api/movies").success(function (data) {
+        $http.get("https://moviewebapi.azurewebsites.net/api/movies").success(function (data) {
                 $scope.movies = data;
                 $scope.loading = false;
             })
@@ -86,7 +86,7 @@ angular.module('casusMIT3.index', ['ngRoute', 'AdalAngular'])
         $scope.createMovie = function () {
             $scope.loading = true;
             $scope.movie = this.movie;
-            $http.post("http://moviewebapi.azurewebsites.net/api/movies", this.newproject)
+            $http.post("https://moviewebapi.azurewebsites.net/api/movies", this.newproject)
                 .success(function (data) {
                     alert("Added Successfully!!");
                     $scope.addMode = false;
